@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+ 
+}
+
+main {
+    border: 0.2em solid black;
+    margin: 30vh auto;
+    max-width: 450px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJeFnFz4G57nlBnkL7XNRjRH0Q7h498CLuDA&s://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=pexels-padrinan-255379.jpg&fm=jpg);
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 4px;
+   
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 0.5em;
+}
+
+label,
+input {
+    width: 95%;
+    font-size: 1.4rem;
+    padding: 0.5em;
+
+}
+
+input {
+
+    margin: 0.5em 0.5em;
+}
+
+.submitG{
+    text-align: center;
+
+}
+
+button {
+    
+    padding: 0.5em;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+
+}
+
+button:hover{
+    box-shadow: 2px 2px 2px blue;
+    scale: 10;
+    rotate: 15deg;
+}
+
+.btnSubmit {
+  background: rgb(205, 205, 255);
+}
+
+.btnReset {
+    background-color: purple;
+    color: white;
+}

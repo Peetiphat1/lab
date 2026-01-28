@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    /* align-content:center; */
+    background-color: lightgray;
+    border: 2px solid black   ;
+    height: 100vh;
+    gap: 0.5em;
+}
+
+.item{
+    /* margin: 0.5em; */
+    padding:1em ;
+    background: lightgoldenrodyellow;
+}
+
+.item:first-child{
+    background: lightcoral;
+}
+
+.item:nth-child(2){
+    background: lightblue;
+    /* flex-grow: 1;
+    flex-shrink: 1; */
+    align-self: center;
+}
+
+.item:nth-child(3){
+    background: lightgreen;
+}
+
+
+
+.item:last-child{
+    background: lightseagreen;
+    font-size: 2em;
+}
