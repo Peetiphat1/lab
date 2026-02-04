@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    
+    display: grid;
+    gap: 0.6em;
+    height: 55em;
+    grid-template-areas: "header header header header"
+                         "service service service rightbar"
+                         "sidebar body1 body2 rightbar"
+                         "sidebar body1 body2 rightbar"
+                         "sidebar footer footer rightbar";
+
+}
+
+.container div{
+    border: 2px solid black;
+    border-radius: 20px;
+    min-height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: 2em;
+    
+
+}
+
+.header{
+    background: beige;
+    border: 2px solid red;; 
+    grid-area: header; 
+    
+}
+
+.service{
+    background: lightblue;
+    grid-area: service; 
+}
+
+.rightbar{
+    background: lightcoral;
+    grid-area: rightbar; 
+}
+
+.sidebar{
+    background: lightgreen;
+    grid-area: sidebar; 
+}
+.body1{
+    background: lightpink;
+    grid-area: body1; 
+}
+
+.body2{
+    background: lightgray;
+    grid-area: body2; 
+}
+
+.footer{
+    background: lightyellow;
+    grid-area: footer; 
+}
