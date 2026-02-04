@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 1vh;
+    display: grid;
+    gap: 0.6em;
+    height: 55em;
+    grid-template-areas: "main main main today"
+                         "main main main about"
+                         "main main main mu"
+                         "main main main h22"
+                     ;
+
+}
+
+.container div{
+    
+    min-height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 0.5em;
+    
+}
+
+.main{
+    border: 2px solid black;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url('https://images.unsplash.com/photo-1694875546238-67cb3596adf1?q=80&w=1336&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 10em;
+}
+
+.logo{
+    display: flex;
+    color: #FFDC05;
+    font-family: "Bebas Neue", Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: -2px; 
+    text-transform: uppercase;
+    font-size: 20em;
+    position: absolute;
+    top: -55%;
+    left: 50%;
+    transform: translateX(-50%) scaleX(1.2);
+    transform-origin: center;
+    z-index: 10;
+}
+
+.text{
+    color: white;
+}
+
+.search{
+    color: white;
+}
+
+.about{
+    grid-area: about;
+    border: 2px solid black;
+}
+
+.today{
+    grid-area: today;
+    border: 2px solid black;
+    
+}
+
+.museum{
+    grid-area: mu;
+    border: 2px solid black;
+}
+
+.H22{
+    grid-area: h22;
+    border: 2px solid black;
+}
