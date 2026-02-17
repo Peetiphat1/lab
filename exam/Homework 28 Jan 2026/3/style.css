@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+
+.container {
+  display: flex;
+  margin: 0.5vh;
+  display: grid;
+  gap: 0.7em;
+  height: 99vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "main main main today"
+    "main main main about"
+    "main main main mu"
+    "main main main h22";
+}
+
+.container div {
+  display: flex;
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("https://images.unsplash.com/photo-1694875546238-67cb3596adf1?q=80&w=1336&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  position: relative;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: 900;
+  color: #ffda1a;
+  font-size: 25em;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  bottom: 50px;
+}
+
+.trademark {
+  font-size: 0.1em;
+  font-weight: 100;
+  position: absolute;
+  top: 1.5em;
+  right: 1em;
+}
+
+.footer {
+  margin-top: auto;
+  margin-bottom: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  margin-left: 1em;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 1, 0.5);
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 1, 0.5);
+  margin-left: 1em;
+  animation: bounce 2s infinite;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: white;
+  border-radius: 8em;
+  text-shadow: 2px 2px 2px rgba(0, 0, 1, 1);
+  height: 60px;
+  width: 420px;
+  background-color: rgba(255, 218, 26, 0.5);
+  font-size: 1.5em;
+  overflow: hidden;
+}
+
+.go {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -8em;
+  margin-right: 2em;
+  background-color: #ffda1a;
+  height: 80px;
+  width: 110px;
+}
+
+.ikea-text {
+  border: 1px solid black;
+  margin-right: 5em;
+  font-size: 1.5em;
+}
+
+p {
+  color: white;
+  font-size: 1.5em;
+  text-shadow: 2px 2px 3px rgb(0, 0, 1);
+  margin: 0.5em;
+  font-weight: bold;
+}
+
+.today {
+  grid-area: today;
+  background-image: url("https://www.ikea.com.tw/dairyfarm/tw/pageImages/page_en_us_1749026089903293835.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about {
+  grid-area: about;
+  background-image: url("https://storage.googleapis.com/techsauce-prod/ugc/uploads/2021/9/ikea_2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.museum {
+  grid-area: mu;
+  background-image: url("https://elements-resized.envatousercontent.com/elements-video-cover-images/files/33c377aa-367a-4a5e-9da3-3730a1a77456/inline_image_preview.jpg?w=500&cf_fit=cover&q=85&format=auto&s=36624d06776c13c904da121fab1822849a1ea2523b6f22dcfdbbe3900a142f4a");
+  background-size: cover;
+  background-position: center;
+}
+
+.H22 {
+  grid-area: h22;
+  background-image: url("https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2070&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+}

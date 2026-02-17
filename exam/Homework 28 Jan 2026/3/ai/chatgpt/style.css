@@ -1,0 +1,140 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BASE ===== */
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== LAYOUT ===== */
+.gateway {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* ===== HERO ===== */
+.hero {
+  width: 65%;
+  position: relative;
+  background-image:
+    linear-gradient(to left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 45%),
+    url("https://images.unsplash.com/photo-1694875546238-67cb3596adf1?q=80&w=1336&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+}
+
+/* IKEA LOGO */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  font-size: 155px;
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  color: #FFDA1A;
+  line-height: 0.9;
+}
+
+.logo sup {
+  font-size: 24px;
+  vertical-align: super;
+}
+
+/* HERO TEXT */
+.hero-content {
+  position: absolute;
+  bottom: 90px;
+  left: 48px;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin-bottom: 22px;
+  text-shadow: 1px 1px 0 #000;
+}
+
+/* CTA BUTTON */
+.cta {
+  display: inline-flex;
+  align-items: center;
+  background: #FFDA1A;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.cta-label {
+  color: #000;
+  margin-right: 10px;
+}
+
+.cta-input {
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: normal;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tile {
+  flex: 1;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.tile span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+  color: #fff;
+  text-shadow: 1px 1px 0 #000;
+}
+
+/* TILE IMAGES */
+.tile1 {
+  background-image: url("https://images.unsplash.com/photo-1615873968403-89e068629265");
+}
+
+.tile2 {
+  background-image: url("https://images.unsplash.com/photo-1560185127-6ed189bf02f4");
+}
+
+.tile3 {
+  background-image: url("https://images.unsplash.com/photo-1540518614846-7eded433c457");
+}
+
+.tile4 {
+  background-image: url("https://images.unsplash.com/photo-1555041469-a586c61ea9bc");
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .gateway {
+    flex-direction: column;
+  }
+
+  .hero,
+  .sidebar {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .logo {
+    font-size: 90px;
+  }
+}
