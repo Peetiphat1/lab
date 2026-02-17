@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+
+    <nav>
+        <img class="logo" src="https://cdn-icons-png.flaticon.com/128/249/249389.png " width="70"
+            alt="spider logo"></img>
+        <div class="right"><span>Home</span>
+            <span>Service</span>
+            <span>Contact</span>
+        </div>
+        <div class="burger" onclick="togglemenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+        </div>
+    </nav>
+
+    <main>
+
+        <section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In consequatur, reiciendis recusandae pariatur
+            delectus quibusdam nisi ipsum cupiditate ad facilis accusantium ipsam deleniti magni iure!
+        </section>
+        <section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In consequatur, reiciendis recusandae pariatur
+            delectus quibusdam nisi ipsum cupiditate ad facilis accusantium ipsam deleniti magni iure!
+        </section>
+        <div class="container">
+            <div class="card">
+                <h1>Spider memory</h1><img
+                    src="https://wallpapercat.com/w/full/5/4/1/1026158-3840x2160-desktop-4k-spider-animal-background-photo.jpg"
+                    alt="spider">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, maxime?</div>
+            </div>
+            <div class="card">
+                <h1>Spider memory</h1><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0oVr9qSZyVr86FzIfg1wlTBH7upjSSnAoPw&s"
+                    alt="spider">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, maxime?</div>
+            </div>
+            <div class="card">
+                <h1>Spider memory</h1><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7k4j3sb9bMrlndVyoSRSC_zSJDUO6bdDVXw&s"
+                    alt="spider">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, maxime?</div>
+            </div>
+            <div class="card">
+                <h1>Spider memory</h1><img
+                    src="https://p4.wallpaperbetter.com/wallpaper/720/923/694/spider-man-homecoming-4k-high-resolution-widescreen-wallpaper-preview.jpg"
+                    alt="spider">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, maxime?</div>
+            </div>
+            <div class="card">
+                <h1>Spider memory</h1><img
+                    src="https://wallpapercat.com/w/full/5/4/1/1026158-3840x2160-desktop-4k-spider-animal-background-photo.jpg"
+                    alt="spider">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, maxime?</div>
+            </div>
+            <div class="card">
+                <h1>Spider memory</h1><img
+                    src="https://wallpapercat.com/w/full/5/4/1/1026158-3840x2160-desktop-4k-spider-animal-background-photo.jpg"
+                    alt="spider">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, maxime?</div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        copyright @ 2026 Responsive Web Design
+    </footer>
+
+    <div class="draw-menu" onclick='togglemenu()' id="menu">
+        <div>Home</div>
+        <div>Service</div>
+        <div>Service2</div>
+        <hr />
+        <div><a href="/contact">Contact</a></div>
+    </div>
+
+    <script>
+        function togglemenu() {
+            let menu = document.getElementById("menu");
+            console.log("X:",menu)
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
