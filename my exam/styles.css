@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Maven pro', sans-serif;
+}
+
+.n1 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1em;
+    background-color: #f7f2e0;
+    padding: 1em;
+}
+
+
+.shop {
+    width: 1em;
+    height: 1em;
+}
+
+.search {
+    width: 1em;
+    height: 1em;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.lne-up {
+    position: absolute;
+    width: 4px;
+    height: 3em;
+    background: black;
+    margin: 0 1em;
+}
+
+
+.centert {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-left: 1em;
+    gap: 1em;
+}
+
+
+.left {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    padding-left: 1em;
+
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 1em;
+
+}
+
+.burger {
+    display: none;
+}
+
+.line {
+    width: 1.3em;
+    height: 4px;
+    background-color: black;
+    border-radius: 2em;
+    margin: 4px 1em;
+}
+
+.logo {
+    margin: 0.6em 1em;
+}
+
+.right span {
+    margin-right: 1em;
+    font-weight: 600;
+}
+
+
+.sec1 {
+    height: 50vh;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f2e0;
+}
+
+.right1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-right: 5em;
+    position: relative;
+    right: 15em;
+}
+.img{
+    position: relative;
+    left: 5em;
+    display: flex;
+    align-items: center;
+    transform: scale(0.5);
+}
+
+.button {
+    display: flex;
+    align-items: start;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    margin-top: 1em;
+    font-weight: 500;
+    padding: 0.5em 2em;
+    background-color: #ce2a39;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.sec2 {
+    padding: 10em;
+    height: 45vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: #f3f4f6;
+}
+
+.sec3 {
+
+    height: 45vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 5em;
+}
+
+.button1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1em;
+}
+
+.button1 div {
+    margin-bottom: 0em;
+    font-weight: 500;
+    justify-content: end;
+    padding: 0.5em 2em;
+    background-color: #f3f4f6;
+    cursor: pointer;
+}
+
+.box {
+    display: flex;
+    height: 3em;
+    width: 3em;
+    background-color: #ce2a39;
+}
+
+.top {
+    color: #ce2a39;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.head1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.head {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.context {
+    font-size: 1.5em;
+}
+
+section p {
+    margin: 0em 2rem;
+}
+
+
+
+
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 20rem;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f3f4f6;
+
+    padding: 1em;
+}
+
+.lf {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rc {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rr {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.f1 {
+    margin-top: 2vh;
+    justify-content: center;
+    gap: 1em;
+}
+
+.f2 {
+    background-color: #f7f2e0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.topfoot {
+    font-size: clamp(0.7rem, 3vw, 1.5em);
+    font-weight: 700;
+    margin-top: 1vh;
+}
+
+.footline {
+    font-size: clamp(0.6rem, 3vw, 1.2em);
+    margin-top: 0.5vh;
+}
+
+.copy {
+    font-size: clamp(0.7rem, 3vw, 1.5em);
+    font-weight: 700;
+    margin-top: 0.5em;
+}
+
+@media (max-width: 600px) {
+    nav .right {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    section {
+        height: 40vh;
+    }
+
+    .top {
+        text-shadow: none;
+    }
+
+    .head {
+        text-shadow: none;
+    }
+
+    .center {
+        font-size: 1em;
+        padding: 0.5em 4em;
+    }
+
+    .s3 {
+        display: none;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img {
+        height: 15vh;
+    }
+
+    footer {
+        align-items: start;
+        padding-left: 2em;
+    }
+}
